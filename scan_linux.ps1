@@ -10,7 +10,7 @@ $dateString = $startTime.ToString("yyyyMMddmmss")
 $min = $min * 1000000
 
 $scriptPath = split-path -parent $MyInvocation.MyCommand.Definition
-$handbrakePath = $scriptPath + "\HandBrakeCLI.exe"
+$handbrakePath = which "HandBrakeCLI"
 
 if (!(Test-Path $handbrakePath)) {
     Write-Output "`nYou need to download HandBrakeCLI.exe and place it in the same directory as this script. `nDownload link: https://handbrake.fr/downloads2.php `nPress N to close the script or Y to open the above link to download."

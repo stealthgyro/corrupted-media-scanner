@@ -11,6 +11,11 @@ Right-click `scan.ps1` then press 'run with powershell' or run from powershell w
 
 Example run: `.\scan.ps1 -dir 'c:\media\directory' -threads 4`
 
+## Linux Prep
+1. Install Powershell on Linux https://learn.microsoft.com/en-us/powershell/scripting/install/install-powershell-on-linux?view=powershell-7.5
+2. Install handbrake-cli https://handbrake.fr/docs/en/latest/get-handbrake/where-to-get-handbrake.html
+3. Example command `pwsh ./scan_linux.ps1 -dir /tank/data/Media/Video/Movies -threads 2`
+
 ### Required</u>
 
 <b>-dir</b> This is your media directory
